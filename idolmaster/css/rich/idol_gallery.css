@@ -168,7 +168,7 @@
 }
 
 body#idol_gallery {
-    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fui%2Fmypage_new%2Fbg%2Fbg_status_mypage_01.png);
+    background-image: url(./idolmaster%2Fimage_sp%2Fui%2Fmypage_new%2Fbg%2Fbg_status_mypage_01.png);
     background-size: 7px 7px
 }
 
@@ -254,7 +254,7 @@ body#idol_gallery {
 }
 
 .star_cool {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fimg_fukidashi_top_cool.png) no-repeat;
+    background: url(./idolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fimg_fukidashi_top_cool.png) no-repeat;
     background-size: 22px;
     width: 22px;
     height: 16px;
@@ -408,7 +408,7 @@ body#idol_gallery {
 }
 
 .star_cute {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fimg_fukidashi_top_cute.png) no-repeat;
+    background: url(./idolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fimg_fukidashi_top_cute.png) no-repeat;
     background-size: 22px;
     width: 22px;
     height: 16px;
@@ -562,7 +562,7 @@ body#idol_gallery {
 }
 
 .star_passion {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fimg_fukidashi_top_passion.png) no-repeat;
+    background: url(./idolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fimg_fukidashi_top_passion.png) no-repeat;
     background-size: 22px;
     width: 22px;
     height: 16px;
@@ -716,7 +716,7 @@ body#idol_gallery {
 }
 
 .star_trainer {
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fimg_fukidashi_top_trainer.png) no-repeat;
+    background: url(./idolmaster%2Fimage_sp%2Fevent%2Fcommon%2Fimg_fukidashi_top_trainer.png) no-repeat;
     background-size: 22px;
     width: 22px;
     height: 16px;
