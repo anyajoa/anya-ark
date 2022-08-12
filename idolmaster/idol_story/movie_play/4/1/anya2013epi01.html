@@ -3,31 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="pragma"
-        content="no-cache">
-    <meta http-equiv="cache-control"
-        content="no-cache">
-    <meta http-equiv="expires"
-        content="-1">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimal-ui">
-    <meta
-        name="apple-mobile-web-app-capable"
-        content="yes">
-    <meta
-        name="apple-mobile-web-app-status-bar-style"
-        content="black-translucent">
-    <link rel="stylesheet"
-        href='../../../../../idolmaster%2Fcss%2Fgame%2Fpex.css'
-        media="all">
-    <script
-        src='../../../../../idolmaster%2Fjs%2Fjquery-1.9.1.min.js'>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href='../../../../../idolmaster%2Fcss%2Fgame%2Fpex.css' media="all">
+    <script src='../../../../../idolmaster%2Fjs%2Fjquery-1.9.1.min.js'>
     </script>
-    <script
-        src='../../../../../idolmaster%2Fjs%2Fpex-1.2.0-NanumSquare.js'>
+    <script src='../../../../../idolmaster%2Fjs%2Fpex-1.2.0-NanumSquare.js'>
     </script>
-    <script
-        src='../../../../../idolmaster%2Fjs%2Fpex_common.js'>
+    <script src='../../../../../idolmaster%2Fjs%2Fpex_common.js'>
     </script>
     <script>
         $(document).ready(function() {
@@ -39,7 +26,7 @@
                 newrelic
                     .setPageViewName(
                         '/idolmaster/index.php/smart_phone_flash/convert/idol_storySsSsflashSsSs4SsSs1SsSs1SsSsidol_gallery--idol_detail--a0104e1ecbb0a22937e3465955d57a8e--2SsSs1/0/0/0/1/1/1/0/0'
-                        );
+                    );
             }
         });
     </script>
@@ -210,7 +197,7 @@
                         ();
                 });
             var pexApi = pex
-            .getAPI();
+                .getAPI();
             window.pexApi = pexApi;
             (function($) {
                 $.fn.pexConsole =
@@ -221,7 +208,7 @@
                                 .gotoFrame(
                                     '/',
                                     sceneLabel
-                                    );
+                                );
                             globalNextLabel
                                 =
                                 0;
@@ -230,38 +217,38 @@
                 $.fn.pexBtacquisition =
                     function(
                         mcName
-                        ) {
+                    ) {
                         var obj = {
                             x: pexApi
                                 .getVariable(
                                     mcName,
                                     'w'
-                                    ),
+                                ),
                             y: pexApi
                                 .getVariable(
                                     mcName,
                                     'h'
-                                    ),
+                                ),
                             poX: pexApi
                                 .getVariable(
                                     mcName,
                                     'x'
-                                    ),
+                                ),
                             poY: pexApi
                                 .getVariable(
                                     mcName,
                                     'y'
-                                    ),
+                                ),
                             label: pexApi
                                 .getVariable(
                                     mcName,
                                     'scene'
-                                    ),
+                                ),
                             voicePath: pexApi
                                 .getVariable(
                                     mcName,
                                     'voicePath'
-                                    )
+                                )
                         };
                         return [obj
                             .x,
@@ -285,7 +272,7 @@
                             .gotoFrame(
                                 mcName,
                                 palam
-                                );
+                            );
                     };
                 $.fn.pexCallActions =
                     function(
@@ -294,26 +281,26 @@
                             .callActions(
                                 '/',
                                 label
-                                );
+                            );
                     };
                 $.fn.pexSetVaris =
                     function(
                         name, h
-                        ) {
+                    ) {
                         pexApi
                             .setVariable(
                                 name,
                                 'touched_x',
                                 h
                                 .x
-                                );
+                            );
                         pexApi
                             .setVariable(
                                 name,
                                 'touched_y',
                                 h
                                 .y
-                                );
+                            );
                     };
             })(jQuery);
             timerId = setTimeout(
@@ -358,7 +345,7 @@
         };
 
         function widthMarginCheck(
-        scale) {
+            scale) {
             if (scale < 0) {
                 return 0;
             }
@@ -369,8 +356,8 @@
                 marginL = 0;
             } else {
                 marginL = Math.round((
-                        myW - size
-                        ) / 2);
+                    myW - size
+                ) / 2);
             }
             return marginL * 2;
         }
@@ -386,8 +373,8 @@
                 marginT = 0;
             } else {
                 marginT = Math.round((
-                        myH - size
-                        ) / 2);
+                    myH - size
+                ) / 2);
             }
             return marginT * 2;
         }
@@ -396,12 +383,12 @@
             var vsn = '';
             if (navigator.plugins[
                     "Shockwave Flash"
-                    ] && navigator
+                ] && navigator
                 .mimeTypes.length) {
                 var tmp = navigator
                     .plugins[
                         "Shockwave Flash"
-                        ].description
+                    ].description
                     .match(/([0-9]+)/);
                 vsn = tmp[0];
             } else {
@@ -409,7 +396,7 @@
                     var tmp =
                         new ActiveXObject(
                             "ShockwaveFlash.ShockwaveFlash"
-                            )
+                        )
                         .GetVariable(
                             "$version")
                         .match(
@@ -425,7 +412,7 @@
 
         function SkipBtnDown(e) {
             var scale =
-        scaleSizeCheck();
+                scaleSizeCheck();
             var width_margin =
                 widthMarginCheck(scale);
             var top_margin =
@@ -440,7 +427,7 @@
                 client_width -
                 width_margin;
             var swf_height = 320 *
-            scale;
+                scale;
             var btn_x = (width_margin /
                 2) + ((swf_width *
                 2) / 3);
@@ -496,12 +483,9 @@
             chrome_app_extension_id =
             'dnacabmnfmejgfffmcehejcmiciinpej';
     </script>
-    <script type='text/javascript'
-        src='../../../../../idolmaster%2Fjs%2Fapp_sound.js'>
+    <script type='text/javascript' src='../../../../../idolmaster%2Fjs%2Fapp_sound.js'>
     </script>
-    <link rel="stylesheet"
-        type="text/css"
-        href="../../../../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../css/base.css" />
 </head>
 
 <body style="height:100%">
@@ -512,24 +496,17 @@
         white_flag = 0;
         vote_simple_swf_flg = 0;
     </script>
-    <script
-        src="../../../../../idolmaster%2Fjs%2Fboombox.min.js">
+    <script src="../../../../../idolmaster%2Fjs%2Fboombox.min.js">
     </script>
-    <script
-        src="../../../../../idolmaster%2Fjs%2Fvoice_2.js">
+    <script src="../../../../../idolmaster%2Fjs%2Fvoice_2.js">
     </script>
     <div id="mbga-pf-footer">
-        <div
-            class="mbga-pf-footer-container odd-lines mbga-pf-footer-white">
+        <div class="mbga-pf-footer-container odd-lines mbga-pf-footer-white">
             <ul>
-                <li
-                    class="mbga-pf-footer-list">
-                    <div
-                        class="mbga-pf-fotter-content">
-                        <a class="mbga-pf-footer-arrow"
-                            href="http://sp.mbga.jp/_grp_view?g=32095227">
-                            <span
-                                class="mbga-pf-footer-caption">公式サークル</span>
+                <li class="mbga-pf-footer-list">
+                    <div class="mbga-pf-fotter-content">
+                        <a class="mbga-pf-footer-arrow" href="http://sp.mbga.jp/_grp_view?g=32095227">
+                            <span class="mbga-pf-footer-caption">公式サークル</span>
                         </a>
                     </div>
                 </li>
@@ -537,42 +514,29 @@
         </div>
         <div id="mbga-pf-footer-navbar">
             <ul class="mbga-pf-box-h">
-                <li id="mbga-pf-footer-navbar-icon-grid"
-                    class="mbga-pf-footer-li">
-                    <a class="mbga-pf-footer-a mbga-pf-footer-home-w"
-                        href="http://sp.mbga.jp/?_from=globalfooter">
-                        <span
-                            class="mbga-pf-footer-txt">ホーム</span>
+                <li id="mbga-pf-footer-navbar-icon-grid" class="mbga-pf-footer-li">
+                    <a class="mbga-pf-footer-a mbga-pf-footer-home-w" href="http://sp.mbga.jp/?_from=globalfooter">
+                        <span class="mbga-pf-footer-txt">ホーム</span>
                     </a>
                 </li>
-                <li id="mbga-pf-footer-navbar-icon-mypage"
-                    class="mbga-pf-footer-li">
-                    <a class="mbga-pf-footer-a mbga-pf-footer-mypage-w"
-                        href="http://sp.mbga.jp/_my0?_from=globalfooter">
-                        <span
-                            class="mbga-pf-footer-txt">マイページ</span>
+                <li id="mbga-pf-footer-navbar-icon-mypage" class="mbga-pf-footer-li">
+                    <a class="mbga-pf-footer-a mbga-pf-footer-mypage-w" href="http://sp.mbga.jp/_my0?_from=globalfooter">
+                        <span class="mbga-pf-footer-txt">マイページ</span>
                     </a>
                 </li>
-                <li id="mbga-pf-footer-navbar-icon-mygame"
-                    class="mbga-pf-footer-li">
-                    <a class="mbga-pf-footer-a mbga-pf-footer-mygame-w"
-                        href="http://sp.mbga.jp/_game_my_top?_from=globalfooter">
-                        <span
-                            class="mbga-pf-footer-txt">マイゲーム</span>
+                <li id="mbga-pf-footer-navbar-icon-mygame" class="mbga-pf-footer-li">
+                    <a class="mbga-pf-footer-a mbga-pf-footer-mygame-w" href="http://sp.mbga.jp/_game_my_top?_from=globalfooter">
+                        <span class="mbga-pf-footer-txt">マイゲーム</span>
                     </a>
                 </li>
-                <li id="mbga-pf-footer-navbar-icon-notification"
-                    class="mbga-pf-footer-li">
-                    <a class="mbga-pf-footer-a mbga-pf-footer-game-w"
-                        href="http://sp.mbga.jp/_game_top?_from=globalfooter">
-                        <span
-                            class="mbga-pf-footer-txt">ゲーム</span>
+                <li id="mbga-pf-footer-navbar-icon-notification" class="mbga-pf-footer-li">
+                    <a class="mbga-pf-footer-a mbga-pf-footer-game-w" href="http://sp.mbga.jp/_game_top?_from=globalfooter">
+                        <span class="mbga-pf-footer-txt">ゲーム</span>
                     </a>
                 </li>
             </ul>
         </div>
-        <script type="text/javascript"
-            charset="UTF-8">
+        <script type="text/javascript" charset="UTF-8">
             (function() {
                 document
                     .addEventListener(
@@ -582,7 +546,7 @@
                                 document
                                 .getElementsByClassName(
                                     'mbga-pf-footer-li'
-                                    );
+                                );
                             var i =
                                 0,
                                 l =
@@ -590,16 +554,16 @@
                                 .length;
                             for (; i <
                                 l; i++
-                                ) {
+                            ) {
                                 var elem =
                                     list[
                                         i
-                                        ];
+                                    ];
                                 elem.addEventListener(
                                     'touchstart',
                                     function(
                                         e
-                                        ) {
+                                    ) {
                                         e.currentTarget
                                             .className =
                                             e
@@ -608,14 +572,14 @@
                                             .replace(
                                                 /$/,
                                                 ' mbga-pf-tapped'
-                                                );
+                                            );
                                     }
-                                    );
+                                );
                                 elem.addEventListener(
                                     'touchend',
                                     function(
                                         e
-                                        ) {
+                                    ) {
                                         e.currentTarget
                                             .className =
                                             e
@@ -624,15 +588,15 @@
                                             .replace(
                                                 / mbga-pf-tapped/,
                                                 ''
-                                                );
+                                            );
                                     }
-                                    );
+                                );
                                 elem.addEventListener(
                                     'touchmove',
                                     function(
                                         e
-                                        ) {}
-                                    );
+                                    ) {}
+                                );
                             }
                         });
             })();
