@@ -2218,7 +2218,7 @@ p.nominalBounds = new cjs.Rectangle(-41.7,-47.9,173.5,72.7);
     // 이름 텍스트 테스트
     this.shape = new lib.name_plate();
 	//this.shape.graphics.f("#000000").s().p("AhHAwQATgGALgHQALgIAFgJQAGgKACgKQABgLAAgNIAAgIIAXAAIAAAFIAAANIgBAMQARgFAKgLQALgKADgQIgRABIgVAAIgXAAIgXAAIgTAAIgKAAIAAgVICKAAQAAAWgHAQQgHARgNALQgMAKgPAGIgNgQQgCAPgFAMQgGAMgNAKQgMAKgTAIg");
-	this.shape.setTransform(13, 3, 0.27, 0.27); //this.shape.setTransform(103.925,12.325);
+	this.shape.setTransform(13, 2, 0.27, 0.27); //this.shape.setTransform(103.925,12.325);
 
 	this.shape_1 = new cjs.Shape();
 	//this.shape_1.graphics.f("#000000").s().p("Ag+AvQAcgCAUgJQATgJANgNQAOgNAIgQQAJgQAFgSIATAPIgJAYQgFALgJANQgJAMgNALQgOALgSAJQgTAIgaAEgAgnABIgRgHIgQgFIALgUIAPAGIASAHIAQAJIgLATIgQgJgAgRgkIgSgHIgQgGIALgTIAPAFIASAHIAPAIIgKAWIgPgKg");
