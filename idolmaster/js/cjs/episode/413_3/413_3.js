@@ -1289,7 +1289,7 @@ p.nominalBounds = new cjs.Rectangle(-2.2,-0.1,4.5,6.8999999999999995);
 	// 타이틀 텍스트 테스트
 	this.shape = new lib.title_txt_3();
 	//this.shape.graphics.f("#333333").s().p("AhLA6QAMgJAHgMQAIgLADgOQAEgMACgOQABgOAAgOIAAgMIAAgMIASAAIAAALQgBAdgCAWQgDAVgIASQgIASgPAPgAAAAgIAAggIAAhDIAQAAIAAAMIAAARIAAAVIAAAVIAAAVIAAAPQALgFAJgKQAJgJAHgMQAGgLAFgMIANAPQgEAJgIAMQgGALgKAKQgKAKgMAIQgMAHgOADIAAgig");
-	this.shape.setTransform(-76, -12, 0.3, 0.3); //this.shape.setTransform(72.15,0.525);
+	this.shape.setTransform(-76, -13, 0.3, 0.3); //this.shape.setTransform(72.15,0.525);
 
 	this.shape_1 = new cjs.Shape();
 	//this.shape_1.graphics.f("#333333").s().p("Ag+A2QARgFALgGQAMgHAGgIQAGgIADgLQADgJAAgKIhBAAIAAgQICLAAIAAAQIg4AAQgBAMgEAMQgDAMgGAKQgGAKgMAIQgLAIgRAGgAg1gzIAAgQIBrAAIAAAQg");
