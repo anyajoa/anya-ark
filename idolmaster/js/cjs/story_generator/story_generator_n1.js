@@ -684,7 +684,7 @@ p.nominalBounds = new cjs.Rectangle(-18,-18,36,36);
 	this.title.lineHeight = 18;
 	this.title.lineWidth = 187;
 	this.title.parent = this;
-	this.title.setTransform(95.45,2);
+	this.title.setTransform(95.45,3);
 
 	this.timeline.addTween(cjs.Tween.get(this.title).wait(1));
 
@@ -873,7 +873,7 @@ p.nominalBounds = new cjs.Rectangle(-6.4,-5.7,12.4,12.5);
 	this.name_text.lineHeight = 18;
 	this.name_text.lineWidth = 171;
 	this.name_text.parent = this;
-	this.name_text.setTransform(2,2);
+	this.name_text.setTransform(2,5);
 
 	this.timeline.addTween(cjs.Tween.get(this.name_text).wait(1));
 
