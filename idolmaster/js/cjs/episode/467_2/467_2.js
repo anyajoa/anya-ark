@@ -1375,9 +1375,9 @@ p.nominalBounds = new cjs.Rectangle(-2.2,-0.1,4.5,6.8999999999999995);
 	//한글 텍스트 타이틀
 	korTitle = { 
 		text : "홋카이도 음식점", //장소 이름
-		font : "bold 20px noto-sans", //폰트크기, 폰트이름
+		font : "bold 16px noto-sans", //폰트크기, 폰트이름
 		color: "#333333", //색상
-		x : -80, //x 좌표값
+		x : -60, //x 좌표값
 		y : -8, //y 좌표값
 	}
 	this.shape = new cjs.Text(korTitle.text, korTitle.font, korTitle.color);

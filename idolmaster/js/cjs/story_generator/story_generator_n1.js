@@ -678,7 +678,7 @@ p.nominalBounds = new cjs.Rectangle(-18,-18,36,36);
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	// レイヤー_1
-	this.title = new cjs.Text("", "16px 'Arial'", "#333333");
+	this.title = new cjs.Text("", "16px 'noto-sans'", "#333333");
 	this.title.name = "title";
 	this.title.textAlign = "center";
 	this.title.lineHeight = 18;
@@ -868,7 +868,7 @@ p.nominalBounds = new cjs.Rectangle(-6.4,-5.7,12.4,12.5);
 	this.initialize(mode,startPosition,loop,{});
 
 	// レイヤー_1
-	this.name_text = new cjs.Text("", "16px 'Arial'");
+	this.name_text = new cjs.Text("", "bold 16px 'noto-sans'");
 	this.name_text.name = "name_text";
 	this.name_text.lineHeight = 18;
 	this.name_text.lineWidth = 171;
