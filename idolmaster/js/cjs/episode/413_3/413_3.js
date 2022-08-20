@@ -124,14 +124,14 @@ p.nominalBounds = new cjs.Rectangle(0,0,537,165);
 
     // 타이틀 텍스트 테스트
     (lib.title_txt_3 = function() {
-        this.initialize(img._471_4_title_txt_3);
+        this.initialize(img._413_3_title_txt_3);
     }
     ).prototype = p = new cjs.Bitmap();
     p.nominalBounds = new cjs.Rectangle(0,0,227,89);
 
     // 이름 텍스트 테스트
     (lib.name_plate = function() {
-        this.initialize(img._471_4_name_plate);
+        this.initialize(img._413_3_name_plate);
     }
     ).prototype = p = new cjs.Bitmap();
     p.nominalBounds = new cjs.Rectangle(0,0,321,75);
@@ -4395,8 +4395,8 @@ lib.properties = {
 		{src:"images/tie_fp.png", id:"_413_3_tie_fp"},
 		{src:"images/tie_sp.png", id:"_413_3_tie_sp"},
 		{src:"images/wave_ukiwa.png", id:"_413_3_wave_ukiwa"},
-		{src:"images/title_txt_3.png", id: "_471_4_title_txt_3"},
-		{src:"images/name_plate.png", id: "_471_4_name_plate"}
+		{src:"images/title_txt_3.png", id: "_413_3_title_txt_3"},
+		{src:"images/name_plate.png", id: "_413_3_name_plate"}
 	],
 	preloads: []
 };
