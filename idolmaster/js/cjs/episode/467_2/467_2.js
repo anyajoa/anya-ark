@@ -1377,8 +1377,8 @@ p.nominalBounds = new cjs.Rectangle(-2.2,-0.1,4.5,6.8999999999999995);
 		text : "홋카이도 음식점", //장소 이름
 		font : "bold 20px noto-sans", //폰트크기, 폰트이름
 		color: "#333333", //색상
-		x : -100, //x 좌표값
-		y : -10, //y 좌표값
+		x : -73, //x 좌표값
+		y : -8, //y 좌표값
 	}
 	this.shape = new cjs.Text(korTitle.text, korTitle.font, korTitle.color);
 	this.shape.setTransform(korTitle.x, korTitle.y);
@@ -2264,8 +2264,8 @@ p.nominalBounds = new cjs.Rectangle(-41.7,-47.9,173.5,72.7);
 		text : "아나스타샤", //아이돌 이름
 		font : "bold 16px noto-sans", //폰트크기, 폰트이름
 		color: "#000000", //색상
-		x : 180, //x 좌표값
-		y : 6, //y 좌표값
+		x : 15, //x 좌표값
+		y : 7, //y 좌표값
 	}
 
 	this.shape = new cjs.Text(korTitle.text, korTitle.font, korTitle.color);
