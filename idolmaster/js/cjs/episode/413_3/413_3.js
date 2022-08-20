@@ -1317,7 +1317,7 @@ p.nominalBounds = new cjs.Rectangle(-2.2,-0.1,4.5,6.8999999999999995);
 		text : "남국의 리조트 호텔", //장소 이름
 		font : "bold 16px noto-sans", //폰트크기, 폰트이름
 		color: "#333333", //색상
-		x : -70, //x 좌표값
+		x : -68, //x 좌표값
 		y : -7, //y 좌표값
 	}
 	this.shape = new cjs.Text(korTitle.text, korTitle.font, korTitle.color);
