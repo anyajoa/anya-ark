@@ -1348,31 +1348,46 @@ p.nominalBounds = new cjs.Rectangle(-2.2,-0.1,4.5,6.8999999999999995);
 	this.initialize(mode,startPosition,loop,{});
 
 	// txt
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#333333").s().p("AhKA7QAFgKADgOQADgOABgQIABgdIAAgwICAAAIAAAnIhvAAIAAAKIBzAAIAAANIgbAAIALAJIAPAMIgMAMIgEgDIgFgFIgLACIgTACIAAALIAqAAIAAAOIgqAAIAAAMIA4AAIAAANIh9AAIAAgNIA1AAIAAgMIgnAAIAAgOIAnAAIAAgKIgSABIgYAAIgDgPIAJAAIAJAAIAIgIIAGgIIgjAAQAAANgBAPQgCAOgDAPQgDANgGANgAACgCIgHAJIAQgBIAQgBIALgBIgFgEIgEgCIgBgCIALgGIgeAAIgHAIgAgsgvIBeAAIAAgLIheAAg");
-	this.shape.setTransform(39.9,0.65);
+	//this.shape = new cjs.Shape();
+	//this.shape.graphics.f("#333333").s().p("AhKA7QAFgKADgOQADgOABgQIABgdIAAgwICAAAIAAAnIhvAAIAAAKIBzAAIAAANIgbAAIALAJIAPAMIgMAMIgEgDIgFgFIgLACIgTACIAAALIAqAAIAAAOIgqAAIAAAMIA4AAIAAANIh9AAIAAgNIA1AAIAAgMIgnAAIAAgOIAnAAIAAgKIgSABIgYAAIgDgPIAJAAIAJAAIAIgIIAGgIIgjAAQAAANgBAPQgCAOgDAPQgDANgGANgAACgCIgHAJIAQgBIAQgBIALgBIgFgEIgEgCIgBgCIALgGIgeAAIgHAIgAgsgvIBeAAIAAgLIheAAg");
+	//this.shape.setTransform(39.9,0.65);
 
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#333333").s().p("AgWBFIAAgOIApAAIAAgTIggAAIAAgOIAgAAIAAgQIggAAIAAhLIBTAAIAABLIgiAAIAAAQIAiAAIAAAOIgiAAIAAATIAnAAIAAAPgAAkgGIASAAIAAgSIgSAAgAADgGIAQAAIAAgSIgQAAgAAkgmIASAAIAAgQIgSAAgAADgmIAQAAIAAgQIgQAAgAhKArIALgCIAKgDIAAgoIgQAAIAAgOIAQAAIAAgiIgSAAIAAgQIA0AAIAAAQIgSAAIAAAiIAQAAIAAAOIgQAAIAAAkIAOgEIAEgCIAAAQIgGADIgTAFIgaAIg");
-	this.shape_1.setTransform(24.025,0.45);
+	//this.shape_1 = new cjs.Shape();
+	//this.shape_1.graphics.f("#333333").s().p("AgWBFIAAgOIApAAIAAgTIggAAIAAgOIAgAAIAAgQIggAAIAAhLIBTAAIAABLIgiAAIAAAQIAiAAIAAAOIgiAAIAAATIAnAAIAAAPgAAkgGIASAAIAAgSIgSAAgAADgGIAQAAIAAgSIgQAAgAAkgmIASAAIAAgQIgSAAgAADgmIAQAAIAAgQIgQAAgAhKArIALgCIAKgDIAAgoIgQAAIAAgOIAQAAIAAgiIgSAAIAAgQIA0AAIAAAQIgSAAIAAAiIAQAAIAAAOIgQAAIAAAkIAOgEIAEgCIAAAQIgGADIgTAFIgaAIg");
+	//this.shape_1.setTransform(24.025,0.45);
 
-	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f("#333333").s().p("AAsBLIAAgwIgvAJIgDgPIAygLIAAhUIARAAIAABRIALgCIAEAPIgPAEIAAAzgAgsBLIAAhFIgBAEIgEALIgGAPIgJAPIgLgQQAHgHAGgJIAIgQIAGgMIgYAAIAAgPIAcAAIAAgyIAQAAIAAAyIAZAAIAAAPIgVAAIAJAJIAJAIIADACIgLAPIgDgEIgFgJIgGgMIAABLgAAOgGIgJgJIgFgCIAKgLIAEACIAKAJIAMALIgKALIgMgLgAARgpIgKgJIgEgDIAKgKIAEADIAKAIIAMAMIgKALIgMgMgAgbgjIACgFIAEgKIADgNIAPAEIgFAPIgEAKIgCAFgAhBgsIgEgJIgCgEIAOgGIABADIAFALIAEAOIgNAGIgFgPg");
-	this.shape_2.setTransform(8,0.4);
+	//this.shape_2 = new cjs.Shape();
+	//this.shape_2.graphics.f("#333333").s().p("AAsBLIAAgwIgvAJIgDgPIAygLIAAhUIARAAIAABRIALgCIAEAPIgPAEIAAAzgAgsBLIAAhFIgBAEIgEALIgGAPIgJAPIgLgQQAHgHAGgJIAIgQIAGgMIgYAAIAAgPIAcAAIAAgyIAQAAIAAAyIAZAAIAAAPIgVAAIAJAJIAJAIIADACIgLAPIgDgEIgFgJIgGgMIAABLgAAOgGIgJgJIgFgCIAKgLIAEACIAKAJIAMALIgKALIgMgLgAARgpIgKgJIgEgDIAKgKIAEADIAKAIIAMAMIgKALIgMgMgAgbgjIACgFIAEgKIADgNIAPAEIgFAPIgEAKIgCAFgAhBgsIgEgJIgCgEIAOgGIABADIAFALIAEAOIgNAGIgFgPg");
+	//this.shape_2.setTransform(8,0.4);
 
-	this.shape_3 = new cjs.Shape();
-	this.shape_3.graphics.f("#333333").s().p("AhLA9IAOgJIAGgHIADgCIAAgqIgVAAIAAgOIAlAAIAAA3IAGAHQAEADAFACQAGACAJAAIABAAIBQgBIgCAPIhPAAQgNAAgKgDQgJgDgFgHIgJAJIgMAKgAgXAtIAAhPIAdAAIADgFIABgGIgpAAIAAgMIAaAAIgFgGIgEgGIAOgGIAHALIAFAHIASAAIAFgHIAFgLIAQAGIgEAGIgEAGIAZAAIAAAMIgtAAIgBAGIgDAFIAqAAIAABPgAgGAhIA4AAIAAgMIg4AAgAgGAKIA4AAIAAgKIg4AAgAgGgLIA4AAIAAgLIg4AAgAg1gnIgIgKIgKgMIANgLIAKANIAIAKIADAEIgNAKg");
-	this.shape_3.setTransform(-8,0.425);
+	//this.shape_3 = new cjs.Shape();
+	//this.shape_3.graphics.f("#333333").s().p("AhLA9IAOgJIAGgHIADgCIAAgqIgVAAIAAgOIAlAAIAAA3IAGAHQAEADAFACQAGACAJAAIABAAIBQgBIgCAPIhPAAQgNAAgKgDQgJgDgFgHIgJAJIgMAKgAgXAtIAAhPIAdAAIADgFIABgGIgpAAIAAgMIAaAAIgFgGIgEgGIAOgGIAHALIAFAHIASAAIAFgHIAFgLIAQAGIgEAGIgEAGIAZAAIAAAMIgtAAIgBAGIgDAFIAqAAIAABPgAgGAhIA4AAIAAgMIg4AAgAgGAKIA4AAIAAgKIg4AAgAgGgLIA4AAIAAgLIg4AAgAg1gnIgIgKIgKgMIANgLIAKANIAIAKIADAEIgNAKg");
+	//this.shape_3.setTransform(-8,0.425);
 
-	this.shape_4 = new cjs.Shape();
-	this.shape_4.graphics.f("#333333").s().p("AANA9IANAAQAGgBAEgCQAEgCADgEIg1AAIgCAEIgBAEIgPgEIAFgUIAEgWIgMAAIAAgOIAOAAIABgLIABgNIAAgJIgGAHIgDADIgLgMIACgDIAIgHIAIgNQAEgHADgJIAOADIgBAEIgCAFIBHAAIAAAOIhNAAIgDAGIgFAHIBPAAIAAATIgBAQIAKAAIAAAOIgLAAIAAANIgBALIAJAAIAAAOIgNAAQgCAJgFAFQgFAFgIACQgHACgKAAgAAcAWIgBAJIgBAHIAUAAIABgLIABgNIgTAAIgBAIgAgFAaIgCAMIARAAIADgLIABgNIgRAAIgCAMgAAfgMIgBAMIATAAIABgKIAAgMIgSAAIgBAKgAAAgQIAAAIIgBAIIARAAIABgLIABgLIgSAAIAAAGgAhLA5QAHgIAGgJIAJgQIAFgNIADgEIALALIgBAGIgHANIgJARQgEAJgGAHgAg7gQIgKgHIgDgDIAIgNIAEADIAKAIIAMAKIgIANIgNgLgAg0g0IgJgHIgFgCIAJgMIAFACIAJAIIANAKIgKAMIgMgLg");
-	this.shape_4.setTransform(-24,0.4);
+	//this.shape_4 = new cjs.Shape();
+	//this.shape_4.graphics.f("#333333").s().p("AANA9IANAAQAGgBAEgCQAEgCADgEIg1AAIgCAEIgBAEIgPgEIAFgUIAEgWIgMAAIAAgOIAOAAIABgLIABgNIAAgJIgGAHIgDADIgLgMIACgDIAIgHIAIgNQAEgHADgJIAOADIgBAEIgCAFIBHAAIAAAOIhNAAIgDAGIgFAHIBPAAIAAATIgBAQIAKAAIAAAOIgLAAIAAANIgBALIAJAAIAAAOIgNAAQgCAJgFAFQgFAFgIACQgHACgKAAgAAcAWIgBAJIgBAHIAUAAIABgLIABgNIgTAAIgBAIgAgFAaIgCAMIARAAIADgLIABgNIgRAAIgCAMgAAfgMIgBAMIATAAIABgKIAAgMIgSAAIgBAKgAAAgQIAAAIIgBAIIARAAIABgLIABgLIgSAAIAAAGgAhLA5QAHgIAGgJIAJgQIAFgNIADgEIALALIgBAGIgHANIgJARQgEAJgGAHgAg7gQIgKgHIgDgDIAIgNIAEADIAKAIIAMAKIgIANIgNgLgAg0g0IgJgHIgFgCIAJgMIAFACIAJAIIANAKIgKAMIgMgLg");
+	//this.shape_4.setTransform(-24,0.4);
 
-	this.shape_5 = new cjs.Shape();
-	this.shape_5.graphics.f("#333333").s().p("AgbBKIAAgdIgRAHIgYAIIgGgQQATgGAMgEIAQgHIAAgpIgrAAIAAgPIArAAIAAgtIARAAIAACVgAAzBFIgaAAIgCAAIgFgCIgGgEQgCgDAAgGIAAiAIARAAIAAAzQAMgEAHgFIAMgIIADgEIANAOIgFAEQgFAEgLAFQgKAGgQAFIAAA2QAAABAAAAQAAABABAAQAAABAAAAQAAABABAAIADACIACAAIAHAAIAJgBQADgBACgCQACgDAAgGIABgQIARAJQAAAPgDAIQgDAHgFADQgFACgFAAIgDAAg");
-	this.shape_5.setTransform(-40.025,0.525);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
+	//this.shape_5 = new cjs.Shape();
+	//this.shape_5.graphics.f("#333333").s().p("AgbBKIAAgdIgRAHIgYAIIgGgQQATgGAMgEIAQgHIAAgpIgrAAIAAgPIArAAIAAgtIARAAIAACVgAAzBFIgaAAIgCAAIgFgCIgGgEQgCgDAAgGIAAiAIARAAIAAAzQAMgEAHgFIAMgIIADgEIANAOIgFAEQgFAEgLAFQgKAGgQAFIAAA2QAAABAAAAQAAABABAAQAAABAAAAQAAABABAAIADACIACAAIAHAAIAJgBQADgBACgCQACgDAAgGIABgQIARAJQAAAPgDAIQgDAHgFADQgFACgFAAIgDAAg");
+	//this.shape_5.setTransform(-40.025,0.525);
+	
+	//한글 텍스트 타이틀
+	korTitle = { 
+		text : "홋카이도 음식점", //장소 이름
+		font : "bold 20px noto-sans", //폰트크기, 폰트이름
+		color: "#333333", //색상
+		x : -100, //x 좌표값
+		y : -10, //y 좌표값
+	}
+	this.shape = new cjs.Text(korTitle.text, korTitle.font, korTitle.color);
+	this.shape.setTransform(korTitle.x, korTitle.y);
+		 
+	this.timeline.addTween(cjs.Tween.get({}).to({
+		state:[{
+			t:this.shape
+		}]
+	}).wait(1)); //{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},
 
 	// base
 	this.instance = new lib.tie_inner();
@@ -2220,31 +2235,46 @@ p.nominalBounds = new cjs.Rectangle(-41.7,-47.9,173.5,72.7);
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(4));
 
 	// dummy
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#000000").s().p("AhHAwQATgGALgHQALgIAFgJQAGgKACgKQABgLAAgNIAAgIIAXAAIAAAFIAAANIgBAMQARgFAKgLQALgKADgQIgRABIgVAAIgXAAIgXAAIgTAAIgKAAIAAgVICKAAQAAAWgHAQQgHARgNALQgMAKgPAGIgNgQQgCAPgFAMQgGAMgNAKQgMAKgTAIg");
-	this.shape.setTransform(103.925,12.325);
+	//this.shape = new cjs.Shape();
+	//this.shape.graphics.f("#000000").s().p("AhHAwQATgGALgHQALgIAFgJQAGgKACgKQABgLAAgNIAAgIIAXAAIAAAFIAAANIgBAMQARgFAKgLQALgKADgQIgRABIgVAAIgXAAIgXAAIgTAAIgKAAIAAgVICKAAQAAAWgHAQQgHARgNALQgMAKgPAGIgNgQQgCAPgFAMQgGAMgNAKQgMAKgTAIg");
+	//this.shape.setTransform(103.925,12.325);
 
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#000000").s().p("Ag+AvQAcgCAUgJQATgJANgNQAOgNAIgQQAJgQAFgSIATAPIgJAYQgFALgJANQgJAMgNALQgOALgSAJQgTAIgaAEgAgnABIgRgHIgQgFIALgUIAPAGIASAHIAQAJIgLATIgQgJgAgRgkIgSgHIgQgGIALgTIAPAFIASAHIAPAIIgKAWIgPgKg");
-	this.shape_1.setTransform(88.225,12.025);
+	//this.shape_1 = new cjs.Shape();
+	//this.shape_1.graphics.f("#000000").s().p("Ag+AvQAcgCAUgJQATgJANgNQAOgNAIgQQAJgQAFgSIATAPIgJAYQgFALgJANQgJAMgNALQgOALgSAJQgTAIgaAEgAgnABIgRgHIgQgFIALgUIAPAGIASAHIAQAJIgLATIgQgJgAgRgkIgSgHIgQgGIALgTIAPAFIASAHIAPAIIgKAWIgPgKg");
+	//this.shape_1.setTransform(88.225,12.025);
 
-	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f("#000000").s().p("Ag7A4QAYgEARgIQASgIAMgLIgQgNIgTgMIAPgOIAPAKIAUANQAHgKAFgLQAFgKACgKIgzAAQgJAMgLANQgMAKgOALIgTgPQAQgJAMgMQAMgMAIgOQAJgNAEgMIAWAFIgEAIIgEAJIARAAIAUAAIASAAIALAAQgBANgEAPQgEAQgIAOQgIAPgNAOQgNANgSAKQgSAKgaAFg");
-	this.shape_2.setTransform(71.575,11.8);
+	//this.shape_2 = new cjs.Shape();
+	//this.shape_2.graphics.f("#000000").s().p("Ag7A4QAYgEARgIQASgIAMgLIgQgNIgTgMIAPgOIAPAKIAUANQAHgKAFgLQAFgKACgKIgzAAQgJAMgLANQgMAKgOALIgTgPQAQgJAMgMQAMgMAIgOQAJgNAEgMIAWAFIgEAIIgEAJIARAAIAUAAIASAAIALAAQgBANgEAPQgEAQgIAOQgIAPgNAOQgNANgSAKQgSAKgaAFg");
+	//this.shape_2.setTransform(71.575,11.8);
 
-	this.shape_3 = new cjs.Shape();
-	this.shape_3.graphics.f("#000000").s().p("AhJArQAXgGARgJQAQgKALgMQAKgLAHgMQAGgMADgMIhLAAIAAgVIBqAAQgDATgHARQgHAQgJANQAIAEAIAGIARAOIAQAPIgSAVQgMgOgLgLIgVgTQgLAMgLAIQgLAIgMAHQgMAGgMAEg");
-	this.shape_3.setTransform(55.9,12.25);
+	//this.shape_3 = new cjs.Shape();
+	//this.shape_3.graphics.f("#000000").s().p("AhJArQAXgGARgJQAQgKALgMQAKgLAHgMQAGgMADgMIhLAAIAAgVIBqAAQgDATgHARQgHAQgJANQAIAEAIAGIARAOIAQAPIgSAVQgMgOgLgLIgVgTQgLAMgLAIQgLAIgMAHQgMAGgMAEg");
+	//this.shape_3.setTransform(55.9,12.25);
 
-	this.shape_4 = new cjs.Shape();
-	this.shape_4.graphics.f("#000000").s().p("AhBAzQAQgFALgGQAKgGAHgHQAGgHAEgKQADgKAAgNIg/AAIAAgVIA/AAIAAgjIAYAAIAAATIAAAQIA4AAIAAAVIg4AAQgBAPgEANQgDANgIAKQgGAKgMAIQgMAIgSAGg");
-	this.shape_4.setTransform(40,11.875);
+	//this.shape_4 = new cjs.Shape();
+	//this.shape_4.graphics.f("#000000").s().p("AhBAzQAQgFALgGQAKgGAHgHQAGgHAEgKQADgKAAgNIg/AAIAAgVIA/AAIAAgjIAYAAIAAATIAAAQIA4AAIAAAVIg4AAQgBAPgEANQgDANgIAKQgGAKgMAIQgMAIgSAGg");
+	//this.shape_4.setTransform(40,11.875);
 
-	this.shape_5 = new cjs.Shape();
-	this.shape_5.graphics.f("#000000").s().p("AhHAwQATgGALgHQALgIAFgJQAGgKACgKQABgLAAgNIAAgIIAXAAIAAAFIAAANIgBAMQARgFAKgLQALgKADgQIgRABIgVAAIgXAAIgXAAIgTAAIgKAAIAAgVICKAAQAAAWgHAQQgHARgNALQgMAKgPAGIgNgQQgCAPgFAMQgGAMgNAKQgMAKgTAIg");
-	this.shape_5.setTransform(23.925,12.325);
+	//this.shape_5 = new cjs.Shape();
+	//this.shape_5.graphics.f("#000000").s().p("AhHAwQATgGALgHQALgIAFgJQAGgKACgKQABgLAAgNIAAgIIAXAAIAAAFIAAANIgBAMQARgFAKgLQALgKADgQIgRABIgVAAIgXAAIgXAAIgTAAIgKAAIAAgVICKAAQAAAWgHAQQgHARgNALQgMAKgPAGIgNgQQgCAPgFAMQgGAMgNAKQgMAKgTAIg");
+	//this.shape_5.setTransform(23.925,12.325);
+	
+	//한글 텍스트 이름
+	korTitle = { 
+		text : "아나스타샤", //아이돌 이름
+		font : "bold 16px noto-sans", //폰트크기, 폰트이름
+		color: "#000000", //색상
+		x : 180, //x 좌표값
+		y : 6, //y 좌표값
+	}
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(4));
+	this.shape = new cjs.Text(korTitle.text, korTitle.font, korTitle.color);
+	this.shape.setTransform(korTitle.x, korTitle.y);
+	this.timeline.addTween(cjs.Tween.get({}).to({
+		state:[{
+			t:this.shape
+		}]
+	}).wait(4)); //{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},
 
 	// text
 	this.text_mc = new lib.textfield();
@@ -3624,7 +3654,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 		this.stop();
 	}
 	this.frame_15 = function() {
-		exportRoot._g.m1 = "いただきます!";
+		exportRoot._g.m1 = "잘 먹겠습니다!";
 		exportRoot._g.m2 = "";
 		exportRoot._g.m3 = "";
 		exportRoot._g.m4 = "";
@@ -3635,8 +3665,8 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 		//this.ch1.gotoAndPlay("swing");
 	}
 	this.frame_35 = function() {
-		exportRoot._g.m1 = "いただきます! …";
-		exportRoot._g.m2 = "";
+		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
+		exportRoot._g.m2 = "...";
 		exportRoot._g.m3 = "";
 		exportRoot._g.m4 = "";
 		exportRoot._u.setText();
@@ -3646,8 +3676,8 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 		//this.ch1.gotoAndPlay("swing");
 	}
 	this.frame_41 = function() {
-		exportRoot._g.m1 = "いただきます! ……";
-		exportRoot._g.m2 = "";
+		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
+		exportRoot._g.m2 = "......";
 		exportRoot._g.m3 = "";
 		exportRoot._g.m4 = "";
 		exportRoot._u.setText();
@@ -3657,8 +3687,8 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 		//this.ch1.gotoAndPlay("swing");
 	}
 	this.frame_47 = function() {
-		exportRoot._g.m1 = "いただきます! ……ﾝ～!";
-		exportRoot._g.m2 = "";
+		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
+		exportRoot._g.m2 = "......음! ";
 		exportRoot._g.m3 = "";
 		exportRoot._g.m4 = "";
 		exportRoot._u.setText();
@@ -3669,7 +3699,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 	}
 	this.frame_73 = function() {
 		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
-		exportRoot._g.m2 = "で､";
+		exportRoot._g.m2 = "......음! 뜨겁고, ";
 		exportRoot._g.m3 = "";
 		exportRoot._g.m4 = "";
 		exportRoot._u.setText();
@@ -3680,7 +3710,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 	}
 	this.frame_94 = function() {
 		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
-		exportRoot._g.m2 = "で､美味しいです……! ";
+		exportRoot._g.m2 = "......음! 뜨겁고, 맛있어요......!";
 		exportRoot._g.m3 = "";
 		exportRoot._g.m4 = "";
 		exportRoot._u.setText();
@@ -3692,7 +3722,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 	this.frame_126 = function() {
 		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
 		exportRoot._g.m2 = this.m.t[exportRoot._g.idx][2];
-		exportRoot._g.m3 = "";
+		exportRoot._g.m3 = "연어도, ";
 		exportRoot._g.m4 = "";
 		exportRoot._u.setText();
 		
@@ -3715,7 +3745,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
 		exportRoot._g.m2 = this.m.t[exportRoot._g.idx][2];
 		exportRoot._g.m3 = this.m.t[exportRoot._g.idx][3];
-		exportRoot._g.m4 = "これが懐かしの味､";
+		exportRoot._g.m4 = "이것이 추억의 맛, ";
 		exportRoot._u.setText();
 		
 		exportRoot._u.setFace("ch1", 1);
@@ -3742,7 +3772,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 		this.ch1.gotoAndPlay("standby");
 	}
 	this.frame_255 = function() {
-		exportRoot._g.m1 = "ﾊﾞﾘｼｮｰｴ ｽﾊﾟｼｰﾊﾞ､";
+		exportRoot._g.m1 = "Большое спасибо. ";
 		exportRoot._g.m2 = "";
 		exportRoot._g.m3 = "";
 		exportRoot._g.m4 = "";
@@ -3765,7 +3795,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 	}
 	this.frame_308 = function() {
 		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
-		exportRoot._g.m2 = "まさか､";
+		exportRoot._g.m2 = "설마, ";
 		exportRoot._g.m3 = "";
 		exportRoot._g.m4 = "";
 		exportRoot._u.setText();
@@ -3776,7 +3806,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 	this.frame_323 = function() {
 		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
 		exportRoot._g.m2 = this.m.t[exportRoot._g.idx][2];
-		exportRoot._g.m3 = "でした｡";
+		exportRoot._g.m3 = "못 했어요. ";
 		exportRoot._g.m4 = "";
 		exportRoot._u.setText();
 		
@@ -3787,7 +3817,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 	this.frame_374 = function() {
 		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
 		exportRoot._g.m2 = this.m.t[exportRoot._g.idx][2];
-		exportRoot._g.m3 = "でした｡それに､";
+		exportRoot._g.m3 = "못 했어요. 게다가, ";
 		exportRoot._g.m4 = "";
 		exportRoot._u.setText();
 		
@@ -3810,7 +3840,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
 		exportRoot._g.m2 = this.m.t[exportRoot._g.idx][2];
 		exportRoot._g.m3 = this.m.t[exportRoot._g.idx][3];
-		exportRoot._g.m4 = "石狩鍋､";
+		exportRoot._g.m4 = "이시카리 나베, ";
 		exportRoot._u.setText();
 		
 		exportRoot._u.setFace("ch1", 2);
@@ -3821,7 +3851,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
 		exportRoot._g.m2 = this.m.t[exportRoot._g.idx][2];
 		exportRoot._g.m3 = this.m.t[exportRoot._g.idx][3];
-		exportRoot._g.m4 = "石狩鍋､ですね? ";
+		exportRoot._g.m4 = "이시카리 나베, 이죠? ";
 		exportRoot._u.setText();
 		
 		exportRoot._u.setFace("ch1", 1);
@@ -3849,7 +3879,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 		this.ch1.gotoAndPlay("standby");
 	}
 	this.frame_484 = function() {
-		exportRoot._g.m1 = "北海道……";
+		exportRoot._g.m1 = "홋카이도...... ";
 		exportRoot._g.m2 = "";
 		exportRoot._g.m3 = "";
 		exportRoot._g.m4 = "";
@@ -3860,7 +3890,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 		//this.ch1.gotoAndPlay("swing");
 	}
 	this.frame_514 = function() {
-		exportRoot._g.m1 = "北海道……ｱｰﾆｬの､";
+		exportRoot._g.m1 = "홋카이도...... 아냐의, ";
 		exportRoot._g.m2 = "";
 		exportRoot._g.m3 = "";
 		exportRoot._g.m4 = "";
@@ -3872,7 +3902,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 	}
 	this.frame_532 = function() {
 		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
-		exportRoot._g.m2 = "故郷｡";
+		exportRoot._g.m2 = "고향. ";
 		exportRoot._g.m3 = "";
 		exportRoot._g.m4 = "";
 		exportRoot._u.setText();
@@ -3883,7 +3913,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 	}
 	this.frame_570 = function() {
 		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
-		exportRoot._g.m2 = "故郷｡その料理を､";
+		exportRoot._g.m2 = "고향. 그 곳의 요리를, ";
 		exportRoot._g.m3 = "";
 		exportRoot._g.m4 = "";
 		exportRoot._u.setText();
@@ -3895,7 +3925,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 	this.frame_592 = function() {
 		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
 		exportRoot._g.m2 = this.m.t[exportRoot._g.idx][2];
-		exportRoot._g.m3 = "られて……";
+		exportRoot._g.m3 = "있어서...... ";
 		exportRoot._g.m4 = "";
 		exportRoot._u.setText();
 		
@@ -3907,7 +3937,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
 		exportRoot._g.m2 = this.m.t[exportRoot._g.idx][2];
 		exportRoot._g.m3 = this.m.t[exportRoot._g.idx][3];
-		exportRoot._g.m4 = "て､";
+		exportRoot._g.m4 = "있어서, ";
 		exportRoot._u.setText();
 		
 		exportRoot._u.setFace("ch1", 5);
@@ -3936,7 +3966,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 		this.ch1.c.gotoAndStop("def");
 	}
 	this.frame_694 = function() {
-		exportRoot._g.m1 = "お鍋は､";
+		exportRoot._g.m1 = "나베는, ";
 		exportRoot._g.m2 = "";
 		exportRoot._g.m3 = "";
 		exportRoot._g.m4 = "";
@@ -3962,7 +3992,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 	}
 	this.frame_748 = function() {
 		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
-		exportRoot._g.m2 = "一つの鍋を囲んで､";
+		exportRoot._g.m2 = "하나의 냄비를 둘러않아, ";
 		exportRoot._g.m3 = "";
 		exportRoot._g.m4 = "";
 		exportRoot._u.setText();
@@ -3974,7 +4004,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 	this.frame_781 = function() {
 		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
 		exportRoot._g.m2 = this.m.t[exportRoot._g.idx][2];
-		exportRoot._g.m3 = "ﾜｲﾜｲ……";
+		exportRoot._g.m3 = "화기애애...... ";
 		exportRoot._g.m4 = "";
 		exportRoot._u.setText();
 		
@@ -3985,7 +4015,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 	this.frame_812 = function() {
 		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
 		exportRoot._g.m2 = this.m.t[exportRoot._g.idx][2];
-		exportRoot._g.m3 = "ﾜｲﾜｲ……冬の､";
+		exportRoot._g.m3 = "화기애애...... 겨울의, ";
 		exportRoot._g.m4 = "";
 		exportRoot._u.setText();
 		
@@ -4008,7 +4038,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
 		exportRoot._g.m2 = this.m.t[exportRoot._g.idx][2];
 		exportRoot._g.m3 = this.m.t[exportRoot._g.idx][3];
-		exportRoot._g.m4 = "ｱｰﾆｬも昔､";
+		exportRoot._g.m4 = "아냐도 옛날에, ";
 		exportRoot._u.setText();
 		
 		exportRoot._u.setFace("ch2", 4);
@@ -4036,7 +4066,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 		this.ch1.gotoAndPlay("standby");
 	}
 	this.frame_923 = function() {
-		exportRoot._g.m1 = "ｱｰ､";
+		exportRoot._g.m1 = "아, ";
 		exportRoot._g.m2 = "";
 		exportRoot._g.m3 = "";
 		exportRoot._g.m4 = "";
@@ -4047,7 +4077,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 		//this.ch2.gotoAndPlay("swing");
 	}
 	this.frame_938 = function() {
-		exportRoot._g.m1 = "ｱｰ､でも､";
+		exportRoot._g.m1 = "아, 그렇지만, ";
 		exportRoot._g.m2 = "";
 		exportRoot._g.m3 = "";
 		exportRoot._g.m4 = "";
@@ -4059,7 +4089,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 	}
 	this.frame_954 = function() {
 		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
-		exportRoot._g.m2 = "だけ猫舌で……";
+		exportRoot._g.m2 = "뜨거운걸 잘 못 먹어서......";
 		exportRoot._g.m3 = "";
 		exportRoot._g.m4 = "";
 		exportRoot._u.setText();
@@ -4071,7 +4101,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 	this.frame_1019 = function() {
 		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
 		exportRoot._g.m2 = this.m.t[exportRoot._g.idx][2];
-		exportRoot._g.m3 = "";
+		exportRoot._g.m3 = "뜨거운 나베, ";
 		exportRoot._g.m4 = "";
 		exportRoot._u.setText();
 		
@@ -4111,7 +4141,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 		this.ch1.gotoAndPlay("standby");
 	}
 	this.frame_1131 = function() {
-		exportRoot._g.m1 = "ふふっ……";
+		exportRoot._g.m1 = "후훗...... ";
 		exportRoot._g.m2 = "";
 		exportRoot._g.m3 = "";
 		exportRoot._g.m4 = "";
@@ -4135,7 +4165,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 	this.frame_1178 = function() {
 		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
 		exportRoot._g.m2 = this.m.t[exportRoot._g.idx][2];
-		exportRoot._g.m3 = "ます｡";
+		exportRoot._g.m3 = "";
 		exportRoot._g.m4 = "";
 		exportRoot._u.setText();
 		
@@ -4146,7 +4176,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 	this.frame_1246 = function() {
 		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
 		exportRoot._g.m2 = this.m.t[exportRoot._g.idx][2];
-		exportRoot._g.m3 = "ます｡ｾｰﾙｳﾞｪ……";
+		exportRoot._g.m3 = "сердце...... ";
 		exportRoot._g.m4 = "";
 		exportRoot._u.setText();
 		
@@ -4158,7 +4188,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
 		exportRoot._g.m2 = this.m.t[exportRoot._g.idx][2];
 		exportRoot._g.m3 = this.m.t[exportRoot._g.idx][3];
-		exportRoot._g.m4 = "して､";
+		exportRoot._g.m4 = "";
 		exportRoot._u.setText();
 		
 		exportRoot._u.setFace("ch2", 5);
@@ -4169,7 +4199,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
 		exportRoot._g.m2 = this.m.t[exportRoot._g.idx][2];
 		exportRoot._g.m3 = this.m.t[exportRoot._g.idx][3];
-		exportRoot._g.m4 = "して､ﾘﾗｯｸｽするから､";
+		exportRoot._g.m4 = "릴렉스가 되니, ";
 		exportRoot._u.setText();
 		
 		exportRoot._u.setFace("ch2", 6);
@@ -4197,7 +4227,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 		this.ch1.gotoAndPlay("standby");
 	}
 	this.frame_1358 = function() {
-		exportRoot._g.m1 = "まだまだ､";
+		exportRoot._g.m1 = "아직, ";
 		exportRoot._g.m2 = "";
 		exportRoot._g.m3 = "";
 		exportRoot._g.m4 = "";
@@ -4209,7 +4239,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 	}
 	this.frame_1373 = function() {
 		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
-		exportRoot._g.m2 = "です｡";
+		exportRoot._g.m2 = "";
 		exportRoot._g.m3 = "";
 		exportRoot._g.m4 = "";
 		exportRoot._u.setText();
@@ -4220,7 +4250,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 	}
 	this.frame_1421 = function() {
 		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
-		exportRoot._g.m2 = this.m.t[exportRoot._g.idx][2];
+		exportRoot._g.m2 = "가득 먹고, ";
 		exportRoot._g.m3 = "";
 		exportRoot._g.m4 = "";
 		exportRoot._u.setText();
@@ -4232,7 +4262,7 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 	this.frame_1454 = function() {
 		exportRoot._g.m1 = this.m.t[exportRoot._g.idx][1];
 		exportRoot._g.m2 = this.m.t[exportRoot._g.idx][2];
-		exportRoot._g.m3 = this.m.t[exportRoot._g.idx][3];
+		exportRoot._g.m3 = "";
 		exportRoot._g.m4 = "";
 		exportRoot._u.setText();
 		
@@ -4242,13 +4272,13 @@ p.nominalBounds = new cjs.Rectangle(-456.9,-700.7,853.5999999999999,833.2);
 	}
 	this.frame_1505 = function() {
 		// finish指定時は exportRoot._g.m の後ろの数字をsetTextの2つ目の引数に指定する
-		exportRoot._g.m4 = "ｱｰﾆｬとあったまりましょう､";
+		exportRoot._g.m4 = "아냐와 함께 따뜻해져요,";
 		exportRoot._u.setText("finish", 4);
 	}
 	this.frame_1546 = function() {
 		// finish指定時は exportRoot._g.m の後ろの数字をsetTextの2つ目の引数に指定する
-		exportRoot._g.m4 = "ｱｰﾆｬとあったまりましょう､";
-		exportRoot._g.m5 = "ﾌﾟﾛﾃﾞｭｰｻｰ♪";
+		exportRoot._g.m4 = "아냐와 함께 따뜻해져요,";
+		exportRoot._g.m5 = "프로듀서♪";
 		exportRoot._u.setText("finish", 4);
 	}
 	this.frame_1569 = function() {
@@ -4506,23 +4536,23 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/bg.jpg?1637717199726", id:"_467_2_bg"},
-		{src:"images/book1.png?1637717199726", id:"_467_2_book1"},
-		{src:"images/ch_base.png?1637717199726", id:"_467_2_ch_base"},
-		{src:"images/ch_face1.png?1637717199726", id:"_467_2_ch_face1"},
-		{src:"images/ch_face2.png?1637717199726", id:"_467_2_ch_face2"},
-		{src:"images/ch_face3.png?1637717199726", id:"_467_2_ch_face3"},
-		{src:"images/ch_face4.png?1637717199726", id:"_467_2_ch_face4"},
-		{src:"images/ch_face5.png?1637717199726", id:"_467_2_ch_face5"},
-		{src:"images/ch_face6.png?1637717199726", id:"_467_2_ch_face6"},
-		{src:"images/ch_face7.png?1637717199726", id:"_467_2_ch_face7"},
-		{src:"images/finish.jpg?1637717199726", id:"_467_2_finish"},
-		{src:"images/finish_blur.jpg?1637717199726", id:"_467_2_finish_blur"},
-		{src:"images/steam1_hand.png?1637717199726", id:"_467_2_steam1_hand"},
-		{src:"images/steam2_hand.png?1637717199726", id:"_467_2_steam2_hand"},
-		{src:"images/steam3.png?1637717199726", id:"_467_2_steam3"},
-		{src:"images/tie_fp.png?1637717199726", id:"_467_2_tie_fp"},
-		{src:"images/tie_sp.png?1637717199726", id:"_467_2_tie_sp"}
+		{src:"images/bg.jpg", id:"_467_2_bg"},
+		{src:"images/book1.png", id:"_467_2_book1"},
+		{src:"images/ch_base.png", id:"_467_2_ch_base"},
+		{src:"images/ch_face1.png", id:"_467_2_ch_face1"},
+		{src:"images/ch_face2.png", id:"_467_2_ch_face2"},
+		{src:"images/ch_face3.png", id:"_467_2_ch_face3"},
+		{src:"images/ch_face4.png", id:"_467_2_ch_face4"},
+		{src:"images/ch_face5.png", id:"_467_2_ch_face5"},
+		{src:"images/ch_face6.png", id:"_467_2_ch_face6"},
+		{src:"images/ch_face7.png", id:"_467_2_ch_face7"},
+		{src:"images/finish.jpg", id:"_467_2_finish"},
+		{src:"images/finish_blur.jpg", id:"_467_2_finish_blur"},
+		{src:"images/steam1_hand.png", id:"_467_2_steam1_hand"},
+		{src:"images/steam2_hand.png", id:"_467_2_steam2_hand"},
+		{src:"images/steam3.png", id:"_467_2_steam3"},
+		{src:"images/tie_fp.png", id:"_467_2_tie_fp"},
+		{src:"images/tie_sp.png", id:"_467_2_tie_sp"}
 	],
 	preloads: []
 };
