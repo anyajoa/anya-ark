@@ -4090,12 +4090,13 @@ p.nominalBounds = new cjs.Rectangle(-97.4,0,92.4,18);
 		exportRoot._u.setFace("ch2", 2);
 	}
 	this.frame_1081 = function() {
-		exportRoot._g.m2 = this.m.t[exportRoot._g.idx][2];
+		exportRoot._g.m2 = "프로듀서와 아냐, 둘이서, ";
 		exportRoot._u.setText();
 		
 		//exportRoot._u.setFace("ch2", 2);
 	}
 	this.frame_1098 = function() {
+		exportRoot._g.m2 = this.m.t[exportRoot._g.idx][2];
 		exportRoot._g.m3 = this.m.t[exportRoot._g.idx][3];
 		exportRoot._u.setText();
 		
