@@ -13,7 +13,7 @@
     <script src='../../idolmaster%2Fjs%2Fjquery-1.9.1.min.js%3Fversion%3D1_9_1'></script>
     <script src="../../idolmaster%2Fjs%2Fpex-1.2.0-NanumSquare.js" type="text/javascript"></script>
     <script src="../../idolmaster%2Fjs%2Fpex_common.js" type="text/javascript"></script>
-    <title>아나스타샤 푸치코레 2스테이지 종료</title>
+    <title>아나스타샤 푸치코레 3스테이지 종료</title>
     <script type="text/javascript">
         var flag = false;
         var cloth_data = new Object();
@@ -242,7 +242,7 @@
         };
         StageEnd.prototype.runPex = function(option) {
             var self = this;
-            this.pex = new Pex('아냐 코레 2스테이지 종료 대사.swf', "container", option);
+            this.pex = new Pex('anya_3stage_end.swf', "container", option);
             this.api = this.pex.getAPI();
             this.api.ready(function() {
                 $('#prefetch').empty();
